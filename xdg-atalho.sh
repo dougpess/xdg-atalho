@@ -18,14 +18,14 @@ function check () {
 
 if [[ -n $6 ]]; then
         echo -e "Baixando ícone do aplicativo... \c"
-        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png) &>/dev/null
+        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png && xdg-desktop-menu forceupdate) &>/dev/null
         check
 fi
 
 echo -e "Criando atalho de menu... \c"
-(xdg-desktop-menu install --novendor $DESKTOP_FILE) &>/dev/null
+(xdg-desktop-menu install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
 check
 
 echo -e "Criando atalho de área de trabalho... \c"
-(xdg-desktop-icon install --novendor $DESKTOP_FILE) &>/dev/null
+(xdg-desktop-icon install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
 check
