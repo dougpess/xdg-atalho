@@ -18,7 +18,7 @@ function check () {
 
 if [[ -n $6 ]]; then
         echo -e "Baixando ícone do aplicativo... \c"
-        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png && xdg-desktop-menu forceupdate) &>/dev/null
+        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png) &>/dev/null
         check
 fi
 
