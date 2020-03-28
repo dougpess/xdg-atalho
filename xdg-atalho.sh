@@ -25,7 +25,3 @@ fi
 echo -e "Criando atalho de menu... \c"
 (xdg-desktop-menu install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
 check
-
-echo -e "Criando atalho de área de trabalho... \c"
-(xdg-desktop-icon install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
-check
