@@ -10,7 +10,7 @@ echo "Categories=$5;" >> $DESKTOP_FILE
 
 function check () {
         if [[ $? -eq 0 ]]; then
-                echo "[Concluído]"
+                echo "[Sucesso]"
             else
                 echo "[Falhou]"
         fi
