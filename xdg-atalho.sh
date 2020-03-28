@@ -17,11 +17,11 @@ function check () {
 }
 
 if [[ -n $6 ]]; then
-        echo -e "Baixando ícone do aplicativo... \c"
+        echo -e "Baixando ícone... \c"
         (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png) &>/dev/null
         check
 fi
 
-echo -e "Criando atalho de menu... \c"
+echo -e "Adicionando atalho ao menu de aplicativos... \c"
 (xdg-desktop-menu install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
 check
