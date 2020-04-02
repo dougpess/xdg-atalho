@@ -10,9 +10,9 @@ echo "Categories=$5;" >> $DESKTOP_FILE
 
 function check () {
         if [[ $? -eq 0 ]]; then
-                echo -e "[\e[92mSucesso]"
+                echo -e "[\e[92mSucesso\e[0m]"
             else
-                echo -e "[\e[91mFalhou]"
+                echo -e "[\e[91mFalhou\e[0m]"
         fi
 }
 
