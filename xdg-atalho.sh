@@ -26,6 +26,6 @@ echo -e "Adicionando atalho ao menu de aplicativos... \c"
 (xdg-desktop-menu install --novendor $DESKTOP_FILE && xdg-desktop-menu forceupdate) &>/dev/null
 check
 
-echo -e "Adicionando atalho a área de trabalho... \c"
+echo -e "Adicionando atalho à área de trabalho... \c"
 sudo -u `logname` xdg-desktop-icon install --novendor $DESKTOP_FILE &>/dev/null
 check
