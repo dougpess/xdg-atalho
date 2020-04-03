@@ -23,7 +23,7 @@ if [[ -n $6 ]]; then
 fi
 
 echo -e "Adicionando atalho ao menu de aplicativos... \c"
-(xdg-desktop-menu install --novendor $DESKTOP_FILE) &>/dev/null
+xdg-desktop-menu install --novendor $DESKTOP_FILE &>/dev/null
 check
 
 echo -e "Adicionando atalho à área de trabalho... \c"
