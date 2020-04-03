@@ -23,6 +23,7 @@ if [[ -n $6 ]]; then
 fi
 
 echo -e "Adicionando atalho ao menu de aplicativos... \c"
+mkdir -p /usr/local/share/applications
 (xdg-desktop-menu install --novendor $DESKTOP_FILE) &>/dev/null
 check
 
