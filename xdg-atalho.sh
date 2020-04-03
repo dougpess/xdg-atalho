@@ -18,7 +18,7 @@ function check () {
 
 if [[ -n $6 ]]; then
         echo -e "Baixando ícone do atalho... \c"
-        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.{png,svg}) &>/dev/null
+        (wget -q -N --trust-server-names $6 && xdg-icon-resource install --novendor --size 64 $4.png) &>/dev/null
         check
 fi
 
