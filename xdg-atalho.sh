@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DESKTOP_FILE="/tmp/z-$1.desktop"
+DESKTOP_FILE="/tmp/@-$1.desktop"
 echo "[Desktop Entry]" > $DESKTOP_FILE
 echo "Name=$2" >> $DESKTOP_FILE
 echo "Exec=$3" >> $DESKTOP_FILE
