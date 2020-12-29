@@ -2,10 +2,11 @@
 
 DESKTOP_FILE="/tmp/@$1.desktop"
 echo "[Desktop Entry]" > $DESKTOP_FILE
+echo "Version=1.0" >> $DESKTOP_FILE
+echo "Type=Application" >> $DESKTOP_FILE
 echo "Name=$2" >> $DESKTOP_FILE
 echo "Exec=$3" >> $DESKTOP_FILE
 echo "Icon=$4" >> $DESKTOP_FILE
-echo "Type=Application" >> $DESKTOP_FILE
 echo "Categories=$5;" >> $DESKTOP_FILE
 
 function check () {
